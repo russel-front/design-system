@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: harmonia-regular;
+  color: $russel-color-secondary-600
+}
+
+// Peso da fonte
+.russel-semiBd {
+  font-family: harmonia-semiBold;
+}
+
+.russel-bd {
+  font-family: harmonia-bold;
+}
+
+@font-face {
+  font-family: "harmonia-regular";
+  src: url("../fonts/HarmoniaSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "harmonia-semiBold";
+  src: url("../fonts/HarmoniaSans-SemiBd.otf");
+}
+
+@font-face {
+  font-family: "harmonia-bold";
+  src: url("../fonts/HarmoniaSans-Bold.otf");
+}

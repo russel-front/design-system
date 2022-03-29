@@ -1,0 +1,427 @@
+// DEFAULT BUTTON
+// TODOS OS BOTÕES SEGUIRÃO ESSE PADRÃO
+.default-button {
+  color: $russel-color-neutral-50;
+  transition: background-color 0.5s, border 0.5s;
+  box-shadow: none;
+  border-radius: 3px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  font-family: harmonia-bold;
+  &:hover {
+    color: $russel-color-neutral-50;
+  }
+  &:active {
+    color: $russel-color-neutral-50;
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:disabled,
+  &:disabled:hover {
+    background-color: $russel-color-neutral-100;
+    color: $russel-color-neutral-200;
+    border: 2px solid $russel-color-neutral-100;
+  }
+}
+
+.default-button > i {
+  color: $russel-color-neutral-50;
+  &:hover {
+    color: $russel-color-neutral-50;
+  }
+  &:active {
+    color: $russel-color-neutral-50;
+  }
+}
+
+// BOTÕES COM O FUNDO PREENCHIDO DE VERMELHO
+.btn-russel-fill-primary {
+  @extend .default-button;
+
+  background-color: $russel-color-primary-100;
+  border: 2px solid $russel-color-primary-100;
+  &:hover {
+    background-color: $russel-color-primary-150;
+    border: 2px solid $russel-color-primary-150;
+  }
+  &:active {
+    background-color: $russel-color-primary-200;
+    border: 2px solid $russel-color-primary-200;
+  }
+}
+
+// BOTÕES COM O FUNDO TRANSPARENTE COM A COR VERMELHA
+.btn-russel-primary {
+  @extend .default-button;
+
+  color: $russel-color-primary-100;
+  border: 2px solid $russel-color-primary-100;
+  background-color: transparent;
+  &:hover {
+    background-color: $russel-color-primary-100;
+    border: 2px solid $russel-color-primary-100;
+  }
+  &:active {
+    background-color: $russel-color-primary-200;
+    border: 2px solid $russel-color-primary-200;
+  }
+}
+
+.btn-russel-primary > i {
+  color: $russel-color-primary-100;
+}
+
+.btn-russel-primary:hover i {
+  color: $russel-color-neutral-50;
+}
+
+// BOTÕES COM O FUNDO PREENCHIDO DE CINZA
+.btn-russel-fill-secondary {
+  @extend .default-button;
+
+  background-color: $russel-color-secondary-200;
+  border: 2px solid $russel-color-secondary-200;
+  &:hover {
+    background-color: $russel-color-secondary-300;
+    border: 2px solid $russel-color-secondary-300;
+  }
+  &:active {
+    background-color: $russel-color-secondary-400;
+    border: 2px solid $russel-color-secondary-400;
+  }
+}
+
+// BOTÕES COM O FUNDO TRANSPARENTE COM A COR CINZA
+.btn-russel-secondary {
+  @extend .default-button;
+
+  color: $russel-color-secondary-200;
+  border: 2px solid $russel-color-secondary-200;
+  background-color: transparent;
+  &:hover {
+    background-color: $russel-color-secondary-200;
+    border: 2px solid $russel-color-secondary-200;
+  }
+  &:active {
+    background-color: $russel-color-secondary-400;
+    border: 2px solid $russel-color-secondary-400;
+  }
+}
+
+.btn-russel-secondary > i {
+  color: $russel-color-secondary-200;
+}
+
+.btn-russel-secondary:hover i {
+  color: $russel-color-neutral-50;
+}
+
+// BOTÕES COM O FUNDO PREENCHIDO DE VERDE
+.btn-russel-fill-success {
+  @extend .default-button;
+
+  background-color: $russel-color-succes-100;
+  border: 2px solid $russel-color-succes-100;
+  &:hover {
+    background-color: $russel-color-succes-150;
+    border: 2px solid $russel-color-succes-150;
+  }
+  &:active {
+    background-color: $russel-color-succes-200;
+    border: 2px solid $russel-color-succes-200;
+  }
+}
+
+// BOTÕES COM O FUNDO TRANSPARENTE COM A COR VERDE
+.btn-russel-success {
+  @extend .default-button;
+
+  color: $russel-color-succes-150;
+  border: 2px solid $russel-color-succes-150;
+  background-color: transparent;
+  &:hover {
+    background-color: $russel-color-succes-150;
+    border: 2px solid $russel-color-succes-150;
+  }
+  &:active {
+    background-color: $russel-color-succes-200;
+    border: 2px solid $russel-color-succes-200;
+  }
+}
+
+.btn-russel-success > i {
+  color: $russel-color-succes-150;
+}
+
+.btn-russel-success:hover i {
+  color: $russel-color-neutral-50;
+}
+
+// BOTÕES COM O FUNDO PREENCHIDO DE VERMELHO (DANGER)
+.btn-russel-fill-danger {
+  @extend .default-button;
+
+  background-color: $russel-color-danger-100;
+  border: 2px solid $russel-color-danger-100;
+  &:hover {
+    background-color: $russel-color-danger-150;
+    border: 2px solid $russel-color-danger-150;
+  }
+  &:active {
+    background-color: $russel-color-danger-200;
+    border: 2px solid $russel-color-danger-200;
+  }
+}
+
+//BOTÕES COM O FUNDO TRANSPARENTE COM A COR VERMELHA (DANGER)
+.btn-russel-danger {
+  @extend .default-button;
+
+  color: $russel-color-danger-150;
+  border: 2px solid $russel-color-danger-150;
+  background-color: transparent;
+  &:hover {
+    background-color: $russel-color-danger-150;
+    border: 2px solid $russel-color-danger-150;
+  }
+  &:active {
+    background-color: $russel-color-danger-200;
+    border: 2px solid $russel-color-danger-200;
+  }
+}
+
+.btn-russel-danger > i {
+  color: $russel-color-danger-150;
+}
+
+.btn-russel-danger:hover i {
+  color: $russel-color-neutral-50;
+}
+
+// BOTÕES COM O FUNDO PREENCHIDO DE BRANCO (NEUTRAL)
+.btn-russel-fill-neutral {
+  @extend .default-button;
+
+  color: $russel-color-secondary-600;
+  background-color: $russel-color-neutral-50;
+  border: 2px solid $russel-color-neutral-50;
+  &:hover {
+    color: $russel-color-secondary-600;
+    background-color: $russel-color-neutral-100;
+    border: 2px solid $russel-color-neutral-100;
+  }
+  &:active {
+    color: $russel-color-secondary-600;
+    background-color: $russel-color-neutral-150;
+    border: 2px solid $russel-color-neutral-150;
+  }
+}
+
+.btn-russel-fill-neutral > i {
+  color: $russel-color-secondary-600;
+}
+
+//BOTÕES COM O FUNDO TRANSPARENTE COM A COR BRANCA (NEUTRAL)
+.btn-russel-neutral {
+  @extend .default-button;
+
+  color: $russel-color-neutral-100;
+  border: 2px solid $russel-color-neutral-100;
+  background-color: transparent;
+  &:hover {
+    color: $russel-color-secondary-600;
+    background-color: $russel-color-neutral-100;
+    border: 2px solid $russel-color-neutral-100;
+  }
+  &:active {
+    color: $russel-color-secondary-600;
+    background-color: $russel-color-neutral-150;
+    border: 2px solid $russel-color-neutral-150;
+  }
+}
+
+.btn-russel-neutral:hover i {
+  color: $russel-color-secondary-600;
+}
+
+.btn-small {
+  height: 31px;
+}
+.btn-medium {
+  height: 38px;
+}
+.btn-large {
+  height: 48px;
+}
+
+.input-primary {
+  border: 2px solid $russel-color-primary-100;
+  &:focus {
+    box-shadow: none;
+    background-color: $russel-color-neutral-50;
+    border: 2px solid $russel-color-primary-100;
+    color: $russel-color-neutral-50;
+  }
+  &:checked {
+    border: 2px solid $russel-color-primary-100;
+    background-color: $russel-color-primary-100;
+  }
+  &:active {
+    background-color: $russel-color-neutral-50;
+    border: 2px solid $russel-color-primary-100;
+    color: $russel-color-neutral-50;
+    filter: none;
+  }
+}
+
+.input-secondary {
+  border: 2px solid $russel-color-secondary-400;
+  &:focus {
+    box-shadow: none;
+    background-color: $russel-color-neutral-50;
+    border: 2px solid $russel-color-secondary-400;
+    color: $russel-color-neutral-50;
+  }
+  &:checked {
+    border: 2px solid $russel-color-secondary-400;
+    background-color: $russel-color-secondary-400;
+  }
+  &:active {
+    background-color: $russel-color-neutral-50;
+    border: 2px solid $russel-color-secondary-400;
+    color: $russel-color-neutral-50;
+    filter: none;
+  }
+}
+
+.radio-neutral {
+  border: 2px solid $russel-color-neutral-50;
+  &:focus {
+    box-shadow: none;
+    background-color: $russel-color-neutral-50;
+    border: 2px solid $russel-color-neutral-50;
+    color: $russel-color-neutral-50;
+  }
+  &:checked {
+    border: 2px solid $russel-color-neutral-50;
+    background-color: $russel-color-neutral-50;
+  }
+  &:active {
+    background-color: $russel-color-neutral-50;
+    border: 2px solid $russel-color-neutral-50;
+    color: $russel-color-neutral-50;
+    filter: none;
+  }
+}
+
+.testeShadow-small,
+.testeShadow-regular {
+  margin-left: 16px;
+  height: 200px;
+  width: 200px;
+  background-color: $russel-color-primary-100;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.testeShadow-small:hover {
+  box-shadow: $sm-shadow-russel;
+}
+.testeShadow-regular:hover {
+  box-shadow: $regular-shadow-russel;
+}
+
+div.tooltips {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+div.tooltips span {
+  position: absolute;
+  width: 150px;
+  color: #ffffff;
+  background: black;
+  padding: 8px;
+  // height: 49px;
+  // line-height: 49px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 2px;
+}
+div.tooltips span:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid black;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+div:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.9;
+  top: 30px;
+  left: 98.5%;
+  margin-left: -76px;
+  z-index: 999;
+}
+
+.dropdown option{
+  color: $russel-color-secondary-600;
+  background-color: $russel-color-neutral-50;
+  
+}
+
+.avatar{
+  height: 40px;
+  width: 40px;
+  background-color: $russel-color-neutral-200;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $russel-color-neutral-500;
+}
+
+.avatar > * {
+  color: $russel-color-neutral-500;
+}
+
+.avatar img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+legend{
+  font-size: 16px;
+  float: none;
+  width: auto;
+  margin: 0 48px;
+  padding: 0 8px;
+  color: $russel-color-secondary-100;
+}
+fieldset{
+  border-top: 1px solid $russel-color-secondary-100;
+}
+
+summary {
+  list-style: none;
+}
+details {
+  margin-bottom: 16px;
+}
+.details-title {
+  padding: 0 16px;
+  // border: 2px solid $russel-color-secondary-400;
+  border-radius: 3px;
+  background-color: $russel-color-neutral-50;
+  box-shadow: $sm-shadow-russel;
+  font-family: harmonia-bold;
+}
+
