@@ -367,18 +367,17 @@ div:hover.tooltips span {
   visibility: visible;
   opacity: 0.9;
   top: 30px;
-  left: 98.5%;
+  left: 50%;
   margin-left: -76px;
   z-index: 999;
 }
 
-.dropdown option{
+.dropdown option {
   color: $russel-color-secondary-600;
   background-color: $russel-color-neutral-50;
-  
 }
 
-.avatar{
+.avatar {
   height: 40px;
   width: 40px;
   background-color: $russel-color-neutral-200;
@@ -393,12 +392,13 @@ div:hover.tooltips span {
   color: $russel-color-neutral-500;
 }
 
-.avatar img{
-  width: 100%;
+.avatar img {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
-legend{
+legend {
   font-size: 16px;
   float: none;
   width: auto;
@@ -406,7 +406,7 @@ legend{
   padding: 0 8px;
   color: $russel-color-secondary-100;
 }
-fieldset{
+fieldset {
   border-top: 1px solid $russel-color-secondary-100;
 }
 
@@ -423,5 +423,133 @@ details {
   background-color: $russel-color-neutral-50;
   box-shadow: $sm-shadow-russel;
   font-family: harmonia-bold;
+}
+
+.searchContainer {
+  width: 150px;
+}
+
+.input-searchContainer,
+.btn-searchContainer {
+  border: none;
+  background-color: $russel-color-neutral-50;
+  color: $russel-color-secondary-600;
+  &:focus {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.alone-btn-search {
+  padding: 0;
+  height: 31px;
+  width: 31px;
+}
+
+.br-russel-circle {
+  border-radius: 50%;
+}
+
+.br-russel-30 {
+  border-radius: 30px;
+}
+
+.br-russel-5 {
+  border-radius: 5px;
+}
+
+.rating {
+  position: relative;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row-reverse;
+}
+.rating input {
+  position: relative;
+  width: 13px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+.rating input::before {
+  content: "\f005";
+  position: absolute;
+  font-family: fontAwesome;
+  // font-size: 34px;
+  position: absolute;
+  left: 4px;
+  color: $russel-color-secondary-50;
+  transition: 0.5s;
+}
+.rating input:nth-child(2n + 1)::before {
+  right: 4px;
+  left: initial;
+}
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input:checked ~ input::before,
+.rating input:checked::before {
+  color: $russel-color-neutral-50;
+}
+
+.russel-form input {
+  border: 1px solid $russel-color-secondary-200;
+  color: $russel-color-secondary-600;
+  &:active {
+    border: 1px solid $russel-color-secondary-200;
+    box-shadow: none;
+  }
+  &:focus {
+    border: 1px solid $russel-color-secondary-200;
+    box-shadow: none;
+  }
+}
+
+.russel-form .input {
+  &-right-icon {
+    padding-right: 60px;
+  }
+  &-left-icon {
+    padding-left: 60px;
+  }
+}
+
+.russel-form label .require-russel-form {
+  color: $russel-color-danger-200;
+}
+
+::placeholder {
+  color: $russel-color-neutral-500;
+}
+
+.labelTest {
+  display: grid;
+  grid-template: 1fr / auto 1fr;
+  gap: 12px;
+  
+  
+  // border: 1px solid #CFD5DB;
+  // border-radius: 5px;
+  // background: #fafafa;
+  // padding: 12px;
+  // color: #6C757D;
+  cursor: text;
+  align-items: center;
+}
+
+.labelTest:focus-within {
+  // border: 1px solid #000;
+}
+
+.labelTest>input {
+  outline: none;
+  border: none;
+  // background: transparent;
 }
 

@@ -1065,8 +1065,8 @@ function App() {
       _________________
       <h1>Tooltips</h1>
       <div className="ms-5" href="#">
+        Passe o mouse em cima do icone para aparecer o tooltip
         <div className="tooltips">
-          Passe o mouse em cima do icone para aparecer o tooltip
           <Icon value={'fa-solid fa-circle-info'} />
           <span>Olá, eu sou um tooltip!</span>
         </div>
@@ -1364,6 +1364,349 @@ function App() {
           >
             Button
           </button>
+        </div>
+      </div>
+      <br></br>
+      _________________
+      <h1>Search bar</h1>
+      <br></br>
+      <div className="m-3 p-3 bg-dark d-flex ">
+        <div className="input-group ms-2 searchContainer btn-small d-md-flex d-none">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="form-control input-searchContainer br-russel-30"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+
+          <button
+            className="btn btn-searchContainer br-russel-30"
+            type="button"
+            id="button-addon1"
+          >
+            <Icon value={'fa-solid fa-magnifying-glass'} />
+          </button>
+        </div>
+        <div className="input-group ms-2 searchContainer btn-medium d-md-flex d-none">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="form-control input-searchContainer br-russel-30"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+
+          <button
+            className="btn btn-searchContainer br-russel-30"
+            type="button"
+            id="button-addon1"
+          >
+            <Icon value={'fa-solid fa-magnifying-glass'} />
+          </button>
+        </div>
+        <div className="input-group ms-2 searchContainer btn-large d-md-flex d-none">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="form-control input-searchContainer br-russel-30"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+
+          <button
+            className="btn btn-searchContainer br-russel-30"
+            type="button"
+            id="button-addon1"
+          >
+            <Icon value={'fa-solid fa-magnifying-glass'} />
+          </button>
+        </div>
+        <button
+          className="ms-2 btn btn-searchContainer alone-btn-search btn-small br-russel-circle"
+          type="button"
+          id="button-addon1"
+        >
+          <Icon value={'fa-solid fa-magnifying-glass'} />
+        </button>
+      </div>
+      <div className="m-3 p-3 bg-dark d-flex ">
+        <div className="input-group ms-2 searchContainer btn-small d-md-flex d-none">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="form-control input-searchContainer br-russel-5"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+
+          <button
+            className="btn btn-searchContainer br-russel-5"
+            type="button"
+            id="button-addon1"
+          >
+            <Icon value={'fa-solid fa-magnifying-glass'} />
+          </button>
+        </div>
+        <div className="input-group ms-2 searchContainer btn-medium d-md-flex d-none">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="form-control input-searchContainer br-russel-5"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+
+          <button
+            className="btn btn-searchContainer br-russel-5"
+            type="button"
+            id="button-addon1"
+          >
+            <Icon value={'fa-solid fa-magnifying-glass'} />
+          </button>
+        </div>
+        <div className="input-group ms-2 searchContainer btn-large d-md-flex d-none">
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="form-control input-searchContainer br-russel-5"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+
+          <button
+            className="btn btn-searchContainer br-russel-5"
+            type="button"
+            id="button-addon1"
+          >
+            <Icon value={'fa-solid fa-magnifying-glass'} />
+          </button>
+        </div>
+        <button
+          className="ms-2 btn btn-searchContainer alone-btn-search br-russel-5 btn-small"
+          type="button"
+          id="button-addon1"
+        >
+          <Icon value={'fa-solid fa-magnifying-glass'} />
+        </button>
+      </div>
+      <br></br>
+      _________________
+      <h1>Rating</h1>
+      <div className="rating bg-dark">
+        <input
+          value="5"
+          onClick={(e) => console.log(e.target.value)}
+          type="radio"
+          name="html"
+        />
+        <input
+          value="4.5"
+          onClick={(e) => console.log(e.target.value)}
+          type="radio"
+          name="html"
+        />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+        <input type="radio" name="html" />
+      </div>
+      <br></br>
+      _________________
+      <h1>Inputs</h1>
+      <div className="container">
+        <div className="row">
+          <div className="russel-form b-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label
+            </label>
+            <input
+              type="email"
+              className="form-control btn-small"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label
+            </label>
+            <input
+              type="email"
+              className="form-control btn-medium"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label
+            </label>
+            <input
+              type="email"
+              className="form-control btn-large"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label <span className="require-russel-form">*</span>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-small"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label <span className="require-russel-form">*</span>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-medium"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label <span className="require-russel-form">*</span>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-large"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label{' '}
+              <div className="tooltips">
+                <Icon value={'fa-solid fa-circle-info'} />
+                <span>Olá, eu sou um tooltip!</span>
+              </div>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-small"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label{' '}
+              <div className="tooltips">
+                <Icon value={'fa-solid fa-circle-info'} />
+                <span>Olá, eu sou um tooltip!</span>
+              </div>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-medium"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label{' '}
+              <div className="tooltips">
+                <Icon value={'fa-solid fa-circle-info'} />
+                <span>Olá, eu sou um tooltip!</span>
+              </div>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-large"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label <span className="require-russel-form">* </span>
+              <div className="tooltips">
+                <Icon value={'fa-solid fa-circle-info'} />
+                <span>Olá, eu sou um tooltip!</span>
+              </div>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-small"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label <span className="require-russel-form">* </span>
+              <div className="tooltips">
+                <Icon value={'fa-solid fa-circle-info'} />
+                <span>Olá, eu sou um tooltip!</span>
+              </div>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-medium"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label <span className="require-russel-form">* </span>
+              <div className="tooltips">
+                <Icon value={'fa-solid fa-circle-info'} />
+                <span>Olá, eu sou um tooltip!</span>
+              </div>
+            </label>
+            <input
+              type="email"
+              className="form-control btn-large"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <input
+              type="email"
+              className="form-control btn-large input-right-icon"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <input
+              type="email"
+              className="form-control btn-large input-right-icon"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <span className='form-control labelTest'>
+              <Icon value={'fa-regular fa-circle-question'}/>
+              <input placeholder="Enter Hotel name" type="search" />
+            </span>
+          </div>
         </div>
       </div>
     </>
