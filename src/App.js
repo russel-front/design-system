@@ -1517,7 +1517,7 @@ function App() {
       </div>
       <br></br>
       _________________
-      <h1>Inputs</h1>
+      <h1>Inputs com label</h1>
       <div className="container">
         <div className="row">
           <div className="russel-form b-3 col-4">
@@ -1680,35 +1680,126 @@ function App() {
             <label for="exampleFormControlInput1" className="form-label">
               Label 
             </label>
-            <input
-              type="email"
-              className="form-control btn-large input-right-icon"
-              id="exampleFormControlInput1"
-              placeholder="Placeholder text"
-            />
-          </div>
-          <div className="russel-form mb-3 col-4">
-            <label for="exampleFormControlInput1" className="form-label">
-              Label 
-            </label>
-            <input
-              type="email"
-              className="form-control btn-large input-right-icon"
-              id="exampleFormControlInput1"
-              placeholder="Placeholder text"
-            />
-          </div>
-          <div className="russel-form mb-3 col-4">
-            <label for="exampleFormControlInput1" className="form-label">
-              Label 
-            </label>
-            <span className='form-control labelTest'>
+            <span className='form-control labelTest btn-small'>
               <Icon value={'fa-regular fa-circle-question'}/>
-              <input placeholder="Enter Hotel name" type="search" />
+              <input placeholder="Enter Hotel name" type="text" />
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <span className='form-control labelTest btn-medium'>
+              <Icon value={'fa-regular fa-circle-question'}/>
+              <input placeholder="Enter Hotel name" type="text" />
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <span className='form-control labelTest btn-large'>
+              <Icon value={'fa-regular fa-circle-question ok'}/>
+              <input placeholder="Enter Hotel name" type="text" />
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <span className='form-control labelTest-right btn-small'>
+              <input placeholder="Enter Hotel name" type="text" />
+              <Icon value={'fa-regular fa-circle-question'}/>
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <span className='form-control labelTest-right btn-medium'>
+              <input placeholder="Enter Hotel name" type="text" />
+              <Icon value={'fa-regular fa-circle-question'}/>
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <label for="exampleFormControlInput1" className="form-label">
+              Label 
+            </label>
+            <span className='form-control labelTest-right btn-large'>
+              <input placeholder="Enter Hotel name" type="text" />
+              <Icon value={'fa-regular fa-circle-question'}/>
             </span>
           </div>
         </div>
       </div>
+      <br></br>
+      _________________
+      <h1>Inputs sem label</h1>
+      <div className="container">
+        <div className="row">
+          <div className="russel-form b-3 col-4">
+            <input
+              type="email"
+              className="form-control btn-small"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <input
+              type="email"
+              className="form-control btn-medium"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <input
+              type="email"
+              className="form-control btn-large"
+              id="exampleFormControlInput1"
+              placeholder="Placeholder text"
+            />
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <span className='form-control labelTest btn-small'>
+              <Icon value={'fa-regular fa-circle-question'}/>
+              <input placeholder="Enter Hotel name" type="text" />
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <span className='form-control labelTest btn-medium'>
+              <Icon value={'fa-regular fa-circle-question'}/>
+              <input placeholder="Enter Hotel name" type="text" />
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <span className='form-control labelTest btn-large'>
+              <Icon value={'fa-regular fa-circle-question ok'}/>
+              <input placeholder="Enter Hotel name" type="text" />
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <span className='form-control labelTest-right btn-small'>
+              <input placeholder="Enter Hotel name" type="text" />
+              <Icon value={'fa-regular fa-circle-question'}/>
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <span className='form-control labelTest-right btn-medium'>
+              <input placeholder="Enter Hotel name" type="text" />
+              <Icon value={'fa-regular fa-circle-question'}/>
+            </span>
+          </div>
+          <div className="russel-form mb-3 col-4">
+            <span className='form-control labelTest-right btn-large'>
+              <input placeholder="Enter Hotel name" type="text" />
+              <Icon value={'fa-regular fa-circle-question'}/>
+            </span>
+          </div>
+        </div>
+      </div>
+
     </>
   )
 }

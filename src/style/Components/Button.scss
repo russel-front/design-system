@@ -498,7 +498,8 @@ details {
   color: $russel-color-neutral-50;
 }
 
-.russel-form input {
+.russel-form input,
+.labelTest, .labelTest-right {
   border: 1px solid $russel-color-secondary-200;
   color: $russel-color-secondary-600;
   &:active {
@@ -511,45 +512,36 @@ details {
   }
 }
 
-.russel-form .input {
-  &-right-icon {
-    padding-right: 60px;
-  }
-  &-left-icon {
-    padding-left: 60px;
-  }
-}
-
 .russel-form label .require-russel-form {
   color: $russel-color-danger-200;
 }
 
-::placeholder {
+::placeholder,
+.labelTest i, .labelTest-right i {
   color: $russel-color-neutral-500;
 }
 
-.labelTest {
+.labelTest, .labelTest-right {
   display: grid;
   grid-template: 1fr / auto 1fr;
-  gap: 12px;
-  
-  
-  // border: 1px solid #CFD5DB;
-  // border-radius: 5px;
-  // background: #fafafa;
-  // padding: 12px;
-  // color: #6C757D;
+  gap: 8px;
   cursor: text;
   align-items: center;
 }
 
-.labelTest:focus-within {
-  // border: 1px solid #000;
+.labelTest-right {
+  grid-template: 1fr / 1fr auto;
 }
 
-.labelTest>input {
+.labelTest input, .labelTest-right input {
   outline: none;
   border: none;
-  // background: transparent;
+  background-color: transparent;
+  overflow: hidden;
+  &:active{
+    border: none;
+  }
+  &:focus {
+    border: none;
+  }
 }
-
